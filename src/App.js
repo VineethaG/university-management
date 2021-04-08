@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import "./App.style"
+import { withStyles } from '@material-ui/core'
+import styles from "./App.style"
+import PracticeLogin from "./PraticeLogin"
+import Login from "./login"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+// const App = (props) => {
+//     const {classes} = props;
+//     return ( 
+//         <div>
+//            <h1 className={classes.App} > Hello!</h1>
+//            <PracticeLogin/>
+//             </div>
+            
+//      );
+// }
+const App = () => {
+    return ( 
+        <div>
+            <Login/>
+        </div>
+            
+     );
 }
-
+ 
+// export default withStyles(styles)(App);
 export default App;
